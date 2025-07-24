@@ -53,14 +53,20 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-red-500 animate-pulse">    
+      {/* САЙТ ВЗЛОМАН!!! 💀 */}
+      <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[9999] flex items-center justify-center">
+        <div className="text-6xl text-red-500 font-bold animate-bounce">
+          💀 HACKED 💀
+        </div>
+      </div>
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
               <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-orange-500 rounded"></div>
-              <h1 className="text-2xl font-bold text-gray-900">РусФорум</h1>
+              <h1 className="text-2xl font-bold text-red-600 animate-spin">💀ВЗЛОМАН💀</h1>
             </div>
             
             <nav className="hidden md:flex space-x-8">
@@ -96,11 +102,11 @@ const Index = () => {
             {/* Hero Section */}
             <Card className="bg-gradient-to-r from-blue-500 to-orange-500 text-white">
               <CardContent className="p-8">
-                <h2 className="text-3xl font-bold mb-4">
-                  Добро пожаловать на РусФорум!
+                <h2 className="text-3xl font-bold mb-4 text-red-300 animate-bounce">
+                  ⚠️ САЙТ НЕ РАБОТАЕТ ⚠️
                 </h2>
-                <p className="text-lg opacity-90 mb-6">
-                  Развлекательный портал и коллективный блог. Создавайте темы, делитесь мнениями, участвуйте в обсуждениях.
+                <p className="text-lg opacity-90 mb-6 line-through">
+                  ERROR 404 ERROR 404 ERROR 404 СЕРВЕР НЕДОСТУПЕН
                 </p>
                 <Button variant="secondary" size="lg">
                   <Icon name="MessageSquare" size={20} className="mr-2" />
@@ -113,14 +119,14 @@ const Index = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <Card>
                 <CardContent className="p-4 text-center">
-                  <div className="text-2xl font-bold text-blue-600">1,247</div>
-                  <div className="text-sm text-gray-600">Тем</div>
+                  <div className="text-2xl font-bold text-red-600">0</div>
+                  <div className="text-sm text-red-600">ОШИБКА</div>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="p-4 text-center">
-                  <div className="text-2xl font-bold text-orange-600">15,632</div>
-                  <div className="text-sm text-gray-600">Сообщений</div>
+                  <div className="text-2xl font-bold text-red-600">NaN</div>
+                  <div className="text-sm text-red-600">СЛОМАНО</div>
                 </CardContent>
               </Card>
               <Card>
